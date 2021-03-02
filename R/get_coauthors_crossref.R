@@ -14,7 +14,7 @@ get_coauthors_crossref <- function(name, orcid = NULL) {
 
   cr_res <- rcrossref::cr_works(cursor = "*", flq = c(query.author = name$family))
 
-  if (!is.null(orcid)) {
+  if (!missing(orcid) && !is.null(orcid)) {
     pubs <- cr_res$data %>%
       filter(map_lgl(author, ~ hasName(., "ORCID") && any(grepl(paste0("/", orcid, "$"), .$ORCID))))
   } else {

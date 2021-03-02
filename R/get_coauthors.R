@@ -9,6 +9,12 @@
 #' of some co-authors.
 #' @param source (required) The data source. Currently only `"crossref"`
 #'
+#' @examples
+#' if (interactive()) {
+#' get_coauthors("Hugo Gruson")
+#' get_coauthors(orcid = "0000-0002-4094-1476")
+#' }
+#'
 #' @export
 get_coauthors <- function(name, orcid, source = c("crossref")) {
 

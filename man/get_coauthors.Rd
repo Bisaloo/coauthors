@@ -21,3 +21,10 @@ of some co-authors.}
 \description{
 Get list of co-authors
 }
+\examples{
+if (interactive()) {
+get_coauthors("Hugo Gruson")
+get_coauthors(orcid = "0000-0002-4094-1476")
+}
+
+}
