@@ -12,7 +12,7 @@ get_coauthors_crossref <- function(name, orcid = NULL) {
 
   name <- as.person(tolower(name))
 
-  cr_res <- rcrossref::cr_works(cursor = "*", flq = c(query.author = name$family), async = TRUE)
+  cr_res <- rcrossref::cr_works(cursor = "*", flq = c(query.author = name$family))
 
   if (!is.null(orcid)) {
     pubs <- cr_res$data %>%
