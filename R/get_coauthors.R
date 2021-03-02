@@ -12,7 +12,7 @@
 #' @examples
 #' if (interactive()) {
 #' get_coauthors("Hugo Gruson")
-#' get_coauthors(orcid = "0000-0002-4094-1476")
+#' get_coauthors("Hugo Gruson", orcid = "0000-0002-4094-1476")
 #' }
 #'
 #' @export

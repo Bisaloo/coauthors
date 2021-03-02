@@ -32,10 +32,11 @@ here) by running:
 get_coauthors("Hugo Gruson")
 ```
 
-Alternatively, you can use an ORCiD. This is useful is the person of
-interest has a lot of homonyms but it might result in the omission of
-some co-authors if the ORCiD is absent from some publications:
+You can add an additional filter on your ORCiD. This is useful is the
+person of interest has a lot of homonyms but it might result in the
+omission of some co-authors if the ORCiD is absent from some
+publications:
 
 ``` r
-get_coauthors(orcid = "0000-0002-4094-1476")
+get_coauthors("Hugo Gruson", orcid = "0000-0002-4094-1476")
 ```
