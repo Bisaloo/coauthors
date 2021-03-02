@@ -11,7 +11,7 @@ Description: Get the list of co-authors for a given person (defined by their
     name or their ORCiD) from various sources (CrossRef, arXiv, etc.). This can
     be used as a tool to detect conflict of interests when looking for 
     reviewers for a given work.
-License: GPL (>= 3)
+License: MIT + file LICENSE
 Config/testthat/edition: 3
 Encoding: UTF-8
 Language: en-GB
